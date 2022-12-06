@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Multiple Fields After Click to show below">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter First Name" onfocus={handleInputFocus} onblur={handleInputBlur} name="firstName"></lightning-input><br/>
+            <lightning-input type="text" label="Enter Last Name" onfocus={handleInputFocus} onblur={handleInputBlur} name="lastName"></lightning-input><br/>
+            <lightning-input type="date" label="Enter a date of birth" onfocus={handleInputFocus} onblur={handleInputBlur} name="date"></lightning-input>
+            <lightning-button variant="natural" label="Submit" title="Submit" onclick={showName} ></lightning-button><br/>
+           
+            first Name is {firstName1}<br/>
+            Last Name is {lastName1}<br/>
+           Date Of Birth is {dateOfBirth}<br/>
+        </div>
+    </lightning-card>
+    
+</template>
